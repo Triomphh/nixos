@@ -154,7 +154,6 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     vim
-    git
     tree
   ];
 
