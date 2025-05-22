@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, inputs, ... }:
 
 {
   # Home Manager needs a bit of information about you and the paths it should
@@ -30,6 +30,7 @@
   # environment.
   home.packages = with pkgs; [
     git
+    inputs.zen-browser.packages.${system}.default
 
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
