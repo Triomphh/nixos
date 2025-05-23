@@ -148,9 +148,6 @@
 
 
 
-  # Install neovim.
-  programs.neovim.enable = true;
-
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
