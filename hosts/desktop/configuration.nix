@@ -148,10 +148,6 @@
 
 
 
-  # Install firefox.
-  programs.firefox.enable = true;
-
-
   # Install neovim.
   programs.neovim.enable = true;
 

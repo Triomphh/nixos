@@ -24,6 +24,7 @@
 
   imports = [
   	../../modules/home-manager/browsers/zen-browser.nix
+  	../../modules/home-manager/browsers/firefox.nix
   	../../modules/home-manager/tools/git.nix
   ];
 
