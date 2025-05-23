@@ -27,7 +27,7 @@
   	../../modules/home-manager/tools/git.nix
   ];
 
-  # Git overrides
+  # Git
   programs.git = {
     userName  = "Triomph";
     userEmail = "worker13prime@gmail.com";
