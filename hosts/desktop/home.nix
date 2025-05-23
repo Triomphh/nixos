@@ -7,7 +7,7 @@
   home.homeDirectory = "/home/triomph";
 
   imports = [
-	inputs.zen-browser.homeModules.beta
+  	./../../modules/home-manager/browsers/zen-browser.nix
   ];
 
   programs.git = {
@@ -19,13 +19,6 @@
 	init.defaultBranch = "main";
 	core.editor = "nvim";
     };
-  };
-
-  programs.zen-browser = {
-	enable = true;
-	policies = {
-		DisableTelemetry = true;
-	};
   };
 
   # This value determines the Home Manager release that your configuration is
