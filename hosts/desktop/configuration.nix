@@ -12,15 +12,23 @@
 
 
   # Bootloader.
-  boot.loader.efi.canTouchEfiVariables = true;
-  boot.loader.grub = {
-  	enable = true;
-	
-	efiSupport = true;	# GRUB will line in the same EFI System Partition
-	device = "nodev";	# "nodev" means "don't write a legacy MBR"
+  boot.loader = {
+	systemd-boot.enable = false;
 
-	useOSProber = true;	# detect other OS (like Windows) for dual-boot
-	# theme = ./theme
+	efi = {
+		canTouchEfiVariables = true;
+		efiSysMountPoint = "/boot";
+	};
+
+	grub = {
+		enable = true;
+		
+		efiSupport = true;	# GRUB will line in the same EFI System Partition
+		device = "nodev";	# "nodev" means "don't write a legacy MBR"
+
+		useOSProber = true;	# detect other OS (like Windows) for dual-boot
+		# theme = ./theme
+	};
   };
 
   networking.hostName = "desktop"; # Define your hostname.
