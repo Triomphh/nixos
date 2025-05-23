@@ -155,6 +155,7 @@
   environment.systemPackages = with pkgs; [
     vim
     tree
+    btop
   ];
 
   # Some programs need SUID wrappers, can be configured further or are

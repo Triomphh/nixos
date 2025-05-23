@@ -6,6 +6,10 @@
   home.username = "triomph";
   home.homeDirectory = "/home/triomph";
 
+  imports = [
+	inputs.zen-browser.homeModules.beta
+  ];
+
   programs.git = {
     enable = true;
     userName = "Triomph";
@@ -15,6 +19,13 @@
 	init.defaultBranch = "main";
 	core.editor = "nvim";
     };
+  };
+
+  programs.zen-browser = {
+	enable = true;
+	policies = {
+		DisableTelemetry = true;
+	};
   };
 
   # This value determines the Home Manager release that your configuration is
@@ -30,7 +41,6 @@
   # environment.
   home.packages = with pkgs; [
     git
-    inputs.zen-browser.packages.${system}.default
 
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
