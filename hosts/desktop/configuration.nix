@@ -139,6 +139,7 @@
     users = {
 	"triomph" = import ./home.nix;
     };
+    backupFileExtension = ".backup";
   };
 
   # Enable automatic login for the user.
