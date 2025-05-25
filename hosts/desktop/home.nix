@@ -26,6 +26,7 @@
   	../../modules/home-manager/browsers/zen-browser.nix
   	../../modules/home-manager/browsers/firefox.nix
   	../../modules/home-manager/editors/neovim.nix
+  	../../modules/home-manager/shells/fish.nix
   	../../modules/home-manager/tools/git.nix
   ];
 
