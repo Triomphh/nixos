@@ -15,6 +15,11 @@
     	# to have it up-to-date or simply don't specify the nixpkgs input  
     	inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    firefox-addons = {
+	url = "gitlab:rycee/nur-expressions?dir=pkgs/firefox-addons";
+	inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = { self, nixpkgs, ... }@inputs: {

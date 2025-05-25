@@ -21,7 +21,6 @@
   };
 
 
-
   imports = [
   	../../modules/home-manager/browsers/zen-browser.nix
   	../../modules/home-manager/browsers/firefox.nix
