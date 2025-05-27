@@ -164,6 +164,8 @@
     tree
     btop
     ripgrep
+    fd
+    clang
  ];
 
  # Fonts
