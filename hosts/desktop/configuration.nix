@@ -13,22 +13,22 @@
 
   # Bootloader.
   boot.loader = {
-	systemd-boot.enable = false;
+    systemd-boot.enable = false;
 
-	efi = {
-		canTouchEfiVariables = true;
-		efiSysMountPoint = "/boot";
-	};
+    efi = {
+      canTouchEfiVariables = true;
+      efiSysMountPoint = "/boot";
+    };
 
-	grub = {
-		enable = true;
-		
-		efiSupport = true;	# GRUB will line in the same EFI System Partition
-		device = "nodev";	# "nodev" means "don't write a legacy MBR"
+  grub = {
+    enable = true;
 
-		useOSProber = true;	# detect other OS (like Windows) for dual-boot
-		# theme = ./theme
-	};
+    efiSupport = true;  # GRUB will line in the same EFI System Partition
+    device = "nodev";   # "nodev" means "don't write a legacy MBR"
+
+    useOSProber = true; # detect other OS (like Windows) for dual-boot
+      # theme = ./theme
+    };
   };
 
   networking.hostName = "desktop"; # Define your hostname.
@@ -127,9 +127,9 @@
     description = "Triomph";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
-    	yt-dlp
-	spotify
-	gnomeExtensions.tiling-shell
+      yt-dlp
+      spotify
+      gnomeExtensions.tiling-shell
     ];
     # shell = pkgs.fish
   };
@@ -137,7 +137,7 @@
   home-manager = {
     extraSpecialArgs = { inherit inputs; };
     users = {
-	"triomph" = import ./home.nix;
+      "triomph" = import ./home.nix;
     };
     backupFileExtension = ".backup";
   };
@@ -170,12 +170,12 @@
 
  # Fonts
  fonts = {
-	 packages = with pkgs; [
-		nerd-fonts.jetbrains-mono
-		nerd-fonts.symbols-only
-	 ];
+  packages = with pkgs; [
+    nerd-fonts.jetbrains-mono
+    nerd-fonts.symbols-only
+  ];
 
-	 fontconfig.enable = true;
+  fontconfig.enable = true;
  };
 
   # Some programs need SUID wrappers, can be configured further or are

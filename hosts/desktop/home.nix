@@ -4,30 +4,30 @@
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
   home = {
-	username = "triomph";
-	homeDirectory = "/home/triomph";
+    username = "triomph";
+    homeDirectory = "/home/triomph";
 
-	stateVersion = "25.05"; # Inform yourself before changing this
+    stateVersion = "25.05"; # Inform yourself before changing this
 
-	packages = with pkgs; [
-		git
-	];
+    packages = with pkgs; [
+      git
+    ];
 
-	file = {};
+    file = {};
 
-	sessionVariables = {
-		# EDITOR = "emacs";
-	};
+    sessionVariables = {
+      # EDITOR = "emacs";
+    };
   };
 
 
   imports = [
-  	../../modules/home-manager/browsers/zen-browser.nix
-  	../../modules/home-manager/browsers/firefox.nix
-  	../../modules/home-manager/editors/emacs.nix
-  	../../modules/home-manager/editors/neovim.nix
-  	../../modules/home-manager/shells/fish.nix
-  	../../modules/home-manager/tools/git.nix
+    ../../modules/home-manager/browsers/zen-browser.nix
+    ../../modules/home-manager/browsers/firefox.nix
+    ../../modules/home-manager/editors/emacs.nix
+    ../../modules/home-manager/editors/neovim.nix
+    ../../modules/home-manager/shells/fish.nix
+    ../../modules/home-manager/tools/git.nix
   ];
 
   # Git
