@@ -13,4 +13,5 @@
 
 	# Starts the Emacs daemon
 	services.emacs.enable = true;
+	services.emacs.startWithUserSession = "graphical";   # Start the daemon after the graphical session
 }
