@@ -161,6 +161,7 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     vim
+    tldr
     tree
     btop
     ripgrep
