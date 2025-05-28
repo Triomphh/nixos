@@ -167,6 +167,7 @@
     ripgrep
     fd
     clang
+    unzip
  ];
 
  # Fonts
