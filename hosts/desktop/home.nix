@@ -27,6 +27,7 @@
     ../../modules/home-manager/editors/emacs.nix
     ../../modules/home-manager/editors/neovim.nix
     ../../modules/home-manager/editors/vscode.nix
+    ../../modules/home-manager/gaming/proton.nix
     ../../modules/home-manager/shells/fish.nix
     ../../modules/home-manager/tools/git.nix
   ];
