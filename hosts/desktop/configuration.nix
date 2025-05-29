@@ -8,6 +8,7 @@
 
       ../../modules/nixos/steam.nix
       ../../modules/nixos/rust.nix
+      ../../modules/nixos/rust-rover.nix
     ];
 
     
