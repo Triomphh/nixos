@@ -7,6 +7,7 @@
       inputs.home-manager.nixosModules.default
 
       ../../modules/nixos/steam.nix
+      ../../modules/nixos/rust.nix
     ];
 
     
