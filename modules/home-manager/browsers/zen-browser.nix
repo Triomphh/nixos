@@ -56,6 +56,7 @@
 				return-youtube-dislikes
 				proton-pass
 				ublock-origin
+				youtube-shorts-block
 			];
 
 		};
