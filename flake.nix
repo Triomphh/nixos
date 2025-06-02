@@ -22,12 +22,12 @@
     };
   };
 
-  outputs = { self, nixpkgs, ... }@inputs: {
+  outputs = { self, ... }@inputs: {
 
     # Desktop
-    nixosConfigurations.desktop = nixpkgs.lib.nixosSystem {
+    nixosConfigurations."desktop" = inputs.nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
-      specialArgs = {inherit inputs;};
+      specialArgs = { inherit inputs; };
       modules = [
         ./hosts/desktop/configuration.nix
         inputs.home-manager.nixosModules.default
@@ -38,7 +38,7 @@
     # ...
 
     # Create alias: default -> desktop
-    nixosConfigurations.default = self.nixosConfigurations.desktop;
+    nixosConfigurations."default" = self.nixosConfigurations.desktop;
 
   };
 }
