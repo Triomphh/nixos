@@ -15,12 +15,16 @@
         name = "JetBrainsMono Nerd Font";
       };
       serif = {
-        package = pkgs.dejavu_fonts;
-        name = "DejaVu Serif";
+        package = pkgs.source-serif;
+        name = "Source Serif Pro";
+        # package = inputs.apple-fonts.packages.${pkgs.system}.ny-nerd;
+        # name = "New York Nerd Font";
       };
       sansSerif = {
-        package = pkgs.dejavu_fonts;
-        name = "DejaVu Sans";
+        package = pkgs.inter;
+        name = "Inter";
+        # package = inputs.apple-fonts.packages.${pkgs.system}.sf-pro-nerd;
+        # name = "SFProDisplay Nerd Font";
       };
     };
   };
