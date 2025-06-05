@@ -5,10 +5,10 @@
     [
       ./hardware-configuration.nix
 
-      ../../modules/nixos/steam.nix
-      ../../modules/nixos/rust.nix
-      ../../modules/nixos/rust-rover.nix
-      ../../modules/nixos/nixd.nix
+      ../../modules/nixos/dev/nixd.nix
+      ../../modules/nixos/dev/rust.nix
+      ../../modules/nixos/editors/rust-rover.nix
+      ../../modules/nixos/gaming/steam.nix
       ../../modules/nixos/theming/stylix.nix
     ];
 
