@@ -9,6 +9,7 @@
       ../../modules/nixos/rust.nix
       ../../modules/nixos/rust-rover.nix
       ../../modules/nixos/nixd.nix
+      ../../modules/nixos/theming/stylix.nix
     ];
 
     
@@ -172,6 +173,7 @@
     fd
     clang
     unzip
+    gnomeExtensions.user-themes
  ];
 
  # Fonts
