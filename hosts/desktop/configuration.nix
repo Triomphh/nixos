@@ -9,6 +9,7 @@
       ../../modules/nixos/dev/rust.nix
       ../../modules/nixos/gaming/steam.nix
       ../../modules/nixos/theming/stylix.nix
+      ../../modules/nixos/desktop/gnome.nix
     ];
 
     
@@ -86,9 +87,6 @@
   };
 
 
-  # Enable the GNOME Desktop Environment.
-  services.displayManager.gdm.enable = true;
-  services.desktopManager.gnome.enable = true;
 
   # Configure keymap in X11
   services.xserver.xkb = {
@@ -133,7 +131,6 @@
     packages = with pkgs; [
       yt-dlp
       spotify
-      gnomeExtensions.tiling-shell
     ];
     # shell = pkgs.fish
   };
@@ -150,9 +147,6 @@
   services.displayManager.autoLogin.enable = true;
   services.displayManager.autoLogin.user = "triomph";
 
-  # Workaround for GNOME autologin: https://github.com/NixOS/nixpkgs/issues/103746#issuecomment-945091229
-  systemd.services."getty@tty1".enable = false;
-  systemd.services."autovt@tty1".enable = false;
 
 
 
@@ -172,7 +166,6 @@
     fd
     clang
     unzip
-    gnomeExtensions.user-themes
  ];
 
  # Fonts
