@@ -32,6 +32,7 @@
     ../../modules/home-manager/gaming/proton.nix
     ../../modules/home-manager/shells/fish.nix
     ../../modules/home-manager/shells/shell-prompts/starship.nix
+    ../../modules/home-manager/terminals/ghostty.nix
     ../../modules/home-manager/tools/git.nix
   ];
 
