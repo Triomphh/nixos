@@ -27,6 +27,7 @@
         "workbench.iconTheme" = "symbols";
         "workbench.layoutControl.enabled" = false;
         "workbench.tree.indent" = 16;
+        "zenMode.hideLineNumbers" = false;
         
         "[rust]" = {
           "editor.formatOnSave" = false;
