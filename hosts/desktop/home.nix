@@ -30,6 +30,7 @@
     ../../modules/home-manager/editors/rust-rover.nix
     ../../modules/home-manager/editors/vscode.nix
     ../../modules/home-manager/editors/windsurf.nix
+    ../../modules/home-manager/gaming/hydralauncher.nix
     ../../modules/home-manager/gaming/prismlauncher.nix
     ../../modules/home-manager/gaming/proton.nix
     ../../modules/home-manager/shells/fish.nix
