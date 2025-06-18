@@ -13,8 +13,8 @@
 
     fonts = {
       monospace = {
-        package = pkgs.nerd-fonts.jetbrains-mono;
-        name = "JetBrainsMono Nerd Font";
+        package = pkgs.nerd-fonts.fira-code;
+        name = "FiraCode Nerd Font";
       };
       serif = {
         package = pkgs.source-serif;
