@@ -14,4 +14,15 @@
     gnomeExtensions.user-themes
     gnomeExtensions.tiling-shell
   ];
+
+  # GNOME window management settings
+  # Add <Super> + right click to resize window
+  programs.dconf.profiles.user.databases = [{
+    settings = {
+      "org/gnome/desktop/wm/preferences" = {
+        resize-with-right-button = true;
+        mouse-button-modifier = "<Super>";
+      };
+    };
+  }];
 } 
