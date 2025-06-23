@@ -15,6 +15,7 @@
     gnomeExtensions.user-themes
     gnomeExtensions.tiling-shell
     gnomeExtensions.just-perfection
+    gnomeExtensions.blur-my-shell
   ];
 
   # GNOME window management settings
