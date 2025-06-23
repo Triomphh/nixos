@@ -14,6 +14,7 @@
   environment.systemPackages = with pkgs; [
     gnomeExtensions.user-themes
     gnomeExtensions.tiling-shell
+    gnomeExtensions.just-perfection
   ];
 
   # GNOME window management settings
