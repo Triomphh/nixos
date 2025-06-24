@@ -50,7 +50,7 @@
     # Custom keyboard shortcuts
     "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0" = {
       name = "Open Browser";
-      command = "zen-browser";
+      command = "zen";
       binding = "<Super>f";
     };
     
@@ -102,6 +102,12 @@
       # Disable automatic suspend timeouts
       sleep-inactive-ac-timeout = lib.gvariant.mkUint32 0;
       sleep-inactive-battery-timeout = lib.gvariant.mkUint32 0;
+    };
+    
+    # Night light settings
+    "org/gnome/settings-daemon/plugins/color" = {
+      night-light-enabled = true;
+      night-light-temperature = lib.gvariant.mkUint32 4337;
     };
     
     # Disable automatic screen blanking
