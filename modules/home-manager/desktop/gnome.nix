@@ -138,5 +138,10 @@
     "org/gnome/desktop/interface" = {
       enable-hot-corners = false;
     };
+
+    # Nautilus settings
+    "org/gnome/nautilus/icon-view" = {
+      default-zoom-level = "small-plus";
+    };
   };
 } 
