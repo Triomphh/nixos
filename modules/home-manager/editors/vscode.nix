@@ -26,7 +26,7 @@
         "terminal.integrated.sendKeybindingsToShell" = true;
         "window.menuBarVisibility" = "compact";
         "window.zoomLevel" = 1;
-        # "workbench.colorTheme" = lib.mkForce "One Dark Space Gray";
+        "workbench.colorTheme" = lib.mkForce "One Dark Space Gray";
         "workbench.iconTheme" = "symbols";
         "workbench.layoutControl.enabled" = false;
         "workbench.tree.indent" = 16;
