@@ -49,6 +49,14 @@
   };
 
 
+  # XDG user directories
+  xdg.userDirs = {
+    enable = true;
+    createDirectories = true;
+    extraConfig = {
+      XDG_GAMES_DIR = "$HOME/Games";
+    };
+  };
 
 
   # Let Home Manager install and manage itself.
