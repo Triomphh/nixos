@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, lib, ... }:
 
 {
   # Enable the GNOME Desktop Environment
@@ -17,12 +17,41 @@
   ];
 
   # GNOME window management settings
-  # Add <Super> + right click to resize window
   programs.dconf.profiles.user.databases = [{
     settings = {
+      # Window management settings
       "org/gnome/desktop/wm/preferences" = {
+        # Add <Super> + right click to resize window
         resize-with-right-button = true;
         mouse-button-modifier = "<Super>";
+      };
+      
+      # Power management settings - disable sleep and power save features
+      "org/gnome/settings-daemon/plugins/power" = {
+        # Set power button to power off
+        power-button-action = "shutdown";
+        # Disable automatic suspend
+        sleep-inactive-ac-type = "nothing";
+        sleep-inactive-battery-type = "nothing";
+        # Disable automatic suspend timeouts
+        sleep-inactive-ac-timeout = lib.gvariant.mkUint32 0;
+        sleep-inactive-battery-timeout = lib.gvariant.mkUint32 0;
+      };
+      
+      # Disable automatic screen blanking
+      "org/gnome/desktop/session" = {
+        idle-delay = lib.gvariant.mkUint32 0; # Never blank screen
+      };
+      
+      # Disable automatic screen lock
+      "org/gnome/desktop/screensaver" = {
+        lock-enabled = false;
+        lock-delay = lib.gvariant.mkUint32 0;
+      };
+      
+      # Disable screen lock on suspend (if suspend somehow gets triggered)
+      "org/gnome/desktop/session" = {
+        disable-lock-screen = true;
       };
     };
   }];
