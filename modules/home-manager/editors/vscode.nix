@@ -18,6 +18,9 @@
         "editor.minimap.enabled" = true;
         "explorer.compactFolders" = false;
         "extensions.autoCheckUpdates" = false;
+        "extensions.experimental.affinity" = {
+          "asvetliakov.vscode-neovim" = 1;
+        };
         "nix.enableLanguageServer" = true;
         "nix.serverPath" = "nixd";
         "terminal.integrated.sendKeybindingsToShell" = true;
