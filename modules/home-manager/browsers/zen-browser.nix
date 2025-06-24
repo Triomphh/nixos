@@ -46,6 +46,9 @@
 				"extensions.autoDisableScopes" = 0;	# Enable our installed extensions by default, preventing you from having to enable them one by one.
 
 				"browser.translations.neverTranstlateLanguages" = "fr";
+
+				# Disable Picture-in-Picture video controls
+				"media.videocontrols.picture-in-picture.video-toggle.enabled" = false;
 			};
 
 
