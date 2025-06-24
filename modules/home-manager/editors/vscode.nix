@@ -47,7 +47,7 @@
       jnoortheen.nix-ide
       alefragnani.project-manager
       rust-lang.rust-analyzer
-      vscodevim.vim
+      asvetliakov.vscode-neovim
       ];
     };
   };
