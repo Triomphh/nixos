@@ -8,6 +8,11 @@
       enabled-extensions = [
         "tilingshell@ferrarodomenico.com"
       ];
+      favorite-apps = [
+        "org.gnome.Settings.desktop"
+        "org.gnome.Nautilus.desktop"
+        "zen-beta.desktop"
+      ];
     };
     
     # Tiling Shell extension settings
