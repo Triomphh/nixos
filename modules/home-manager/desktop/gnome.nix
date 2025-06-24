@@ -26,6 +26,59 @@
       focus-window-left  = ["<Super>Left"];
       focus-window-right = ["<Super>Right"];
     };
+
+    # GNOME Shell keybindings
+    "org/gnome/shell/keybindings" = {
+      # Disable toggle-quick-settings shortcut
+      toggle-quick-settings = [];
+    };
+
+    # Keyboard shortcuts
+    "org/gnome/settings-daemon/plugins/media-keys" = {
+      # Built-in shortcut for opening settings
+      control-center = ["<Super>i"];
+      
+      # Define custom keybinding paths
+      custom-keybindings = [
+        "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/"
+        "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/"
+        "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/"
+        "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/"
+      ];
+    };
+    
+    # Custom keyboard shortcuts
+    "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0" = {
+      name = "Open Browser";
+      command = "zen-browser";
+      binding = "<Super>f";
+    };
+    
+    "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1" = {
+      name = "Open Spotify";
+      command = "spotify";
+      binding = "<Super>s";
+    };
+    
+    "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2" = {
+      name = "Open Editor";
+      command = "emacsclient -c";
+      binding = "<Super>c";
+    };
+    
+    "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3" = {
+      name = "Open Terminal";
+      command = "ghostty";
+      binding = "<Super>t";
+    };
+
+    # Window manager keybindings
+    "org/gnome/desktop/wm/keybindings" = {
+      # close window
+      close = ["<Super>q"];
+      # toggle fullscreen
+      toggle-fullscreen = ["<Alt>Return"];
+    };
     
     # Window management settings
     "org/gnome/desktop/wm/preferences" = {
