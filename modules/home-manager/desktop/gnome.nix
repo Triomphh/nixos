@@ -126,5 +126,10 @@
       lock-enabled = false;
       lock-delay = lib.gvariant.mkUint32 0;
     };
+
+    # Sound settings - disable event sounds
+    "org/gnome/desktop/sound" = {
+      event-sounds = false;
+    };
   };
 } 
