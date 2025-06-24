@@ -40,8 +40,10 @@
 
     # Keyboard shortcuts
     "org/gnome/settings-daemon/plugins/media-keys" = {
-      # Built-in shortcut for opening settings
+      # open settings
       control-center = ["<Super>i"];
+      # open file manager
+      home = ["<Super>e"];
       
       # Define custom keybinding paths
       custom-keybindings = [
@@ -130,6 +132,11 @@
     # Sound settings - disable event sounds
     "org/gnome/desktop/sound" = {
       event-sounds = false;
+    };
+
+    # Interface settings
+    "org/gnome/desktop/interface" = {
+      enable-hot-corners = false;
     };
   };
 } 
