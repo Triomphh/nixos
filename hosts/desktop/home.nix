@@ -39,6 +39,7 @@
     ../../modules/home-manager/terminals/ghostty.nix
     ../../modules/home-manager/terminals/kitty.nix
     ../../modules/home-manager/tools/git.nix
+    ../../modules/home-manager/tools/pandoc.nix
   ];
 
   # Git
