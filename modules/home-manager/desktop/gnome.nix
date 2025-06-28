@@ -6,7 +6,11 @@
     # GNOME Shell extensions
     "org/gnome/shell" = {
       enabled-extensions = [
+        "user-theme@gnome-shell-extensions.gcampax.github.com"
         "tilingshell@ferrarodomenico.com"
+        "appindicatorsupport@rgcjonas.gmail.com"
+        "ds4battery@slie.ru"
+        "transparent-top-bar@ftpix.com"
       ];
       favorite-apps = [
         "org.gnome.Settings.desktop"
@@ -144,4 +148,4 @@
       default-zoom-level = "small-plus";
     };
   };
-} 
+}
