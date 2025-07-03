@@ -34,6 +34,7 @@
     ../../modules/home-manager/gaming/hydralauncher.nix
     ../../modules/home-manager/gaming/prismlauncher.nix
     ../../modules/home-manager/gaming/proton.nix
+    ../../modules/home-manager/gaming/wowup-cf.nix
     ../../modules/home-manager/shells/fish.nix
     ../../modules/home-manager/shells/shell-prompts/starship.nix
     ../../modules/home-manager/terminals/ghostty.nix
