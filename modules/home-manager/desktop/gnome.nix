@@ -11,6 +11,7 @@
         "appindicatorsupport@rgcjonas.gmail.com"
         "ds4battery@slie.ru"
         "transparent-top-bar@ftpix.com"
+        "blur-my-shell@aunetx"
       ];
       favorite-apps = [
         "org.gnome.Settings.desktop"
@@ -34,6 +35,11 @@
       focus-window-down  = ["<Super>Down"];
       focus-window-left  = ["<Super>Left"];
       focus-window-right = ["<Super>Right"];
+    };
+
+    # Blur My Shell extension settings
+    "org/gnome/shell/extensions/blur-my-shell/panel" = {
+      blur = false; # Disable Panel blur to be handled by transparent-top-bar instead
     };
 
     # GNOME Shell keybindings
