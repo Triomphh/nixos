@@ -31,6 +31,7 @@
     ../../modules/home-manager/editors/rust-rover.nix
     ../../modules/home-manager/editors/vscode.nix
     ../../modules/home-manager/editors/windsurf.nix
+    ../../modules/home-manager/gaming/dolphin-emu.nix
     ../../modules/home-manager/gaming/hydralauncher.nix
     ../../modules/home-manager/gaming/lutris.nix
     ../../modules/home-manager/gaming/prismlauncher.nix
