@@ -48,6 +48,23 @@
   # Enable networking
   networking.networkmanager.enable = true;
 
+  # Enable libvirt for virtualization (gnome-boxes)
+  virtualisation.libvirtd = {
+    enable = true;
+    qemu = {
+      package = pkgs.qemu_kvm;
+      runAsRoot = true;
+      swtpm.enable = true;
+      ovmf = {
+        enable = true;
+        packages = [(pkgs.OVMF.override {
+          secureBoot = true;
+          tpmSupport = true;
+        }).fd];
+      };
+    };
+  };
+
   # Set your time zone.
   time.timeZone = "Europe/Paris";
 
@@ -129,7 +146,7 @@
   users.users.triomph = {
     isNormalUser = true;
     description = "Triomph";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "libvirtd" ];
     packages = with pkgs; [
       yt-dlp
       spotify
