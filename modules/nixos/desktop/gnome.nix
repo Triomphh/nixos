@@ -12,6 +12,7 @@
 
   # GNOME packages and extensions
   environment.systemPackages = with pkgs; [
+    gnome-boxes
     gnomeExtensions.user-themes
     gnomeExtensions.tiling-shell
   ];

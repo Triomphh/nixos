@@ -25,7 +25,6 @@
     ../../modules/home-manager/browsers/zen-browser.nix
     ../../modules/home-manager/browsers/firefox.nix
     ../../modules/home-manager/desktop/gnome.nix
-    ../../modules/home-manager/desktop/gnome-boxes.nix
     ../../modules/home-manager/editors/cursor.nix
     ../../modules/home-manager/editors/emacs.nix
     ../../modules/home-manager/editors/neovim.nix
