@@ -5,6 +5,7 @@
     [
       ./hardware-configuration.nix
 
+      ../../modules/nixos/desktop/flatpak.nix
       ../../modules/nixos/desktop/gnome.nix
       ../../modules/nixos/dev/nixd.nix
       ../../modules/nixos/dev/rust.nix
