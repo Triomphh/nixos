@@ -8,6 +8,7 @@
       ../../modules/nixos/desktop/flatpak.nix
       ../../modules/nixos/desktop/gnome.nix
       ../../modules/nixos/dev/docker.nix
+      ../../modules/nixos/dev/direnv.nix
       ../../modules/nixos/dev/guile.nix
       ../../modules/nixos/dev/nixd.nix
       ../../modules/nixos/dev/rust.nix
