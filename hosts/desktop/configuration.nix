@@ -7,6 +7,7 @@
 
       ../../modules/nixos/desktop/flatpak.nix
       ../../modules/nixos/desktop/gnome.nix
+      ../../modules/nixos/dev/docker.nix
       ../../modules/nixos/dev/guile.nix
       ../../modules/nixos/dev/nixd.nix
       ../../modules/nixos/dev/rust.nix
@@ -148,7 +149,7 @@
   users.users.triomph = {
     isNormalUser = true;
     description = "Triomph";
-    extraGroups = [ "networkmanager" "wheel" "libvirtd" ];
+    extraGroups = [ "networkmanager" "wheel" "libvirtd" "docker" ];
     packages = with pkgs; [
       yt-dlp
       spotify
