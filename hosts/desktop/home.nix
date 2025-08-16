@@ -36,6 +36,7 @@
     ../../modules/home-manager/gaming/lutris.nix
     ../../modules/home-manager/gaming/prismlauncher.nix
     ../../modules/home-manager/gaming/proton.nix
+    ../../modules/home-manager/gaming/vintagestory.nix
     ../../modules/home-manager/gaming/wowup-cf.nix
     ../../modules/home-manager/shells/fish.nix
     ../../modules/home-manager/shells/shell-prompts/starship.nix
