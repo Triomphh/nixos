@@ -29,6 +29,16 @@
 						icon = "${pkgs.nixos-icons}/share/icons/hicolor/scalable/apps/nix-snowflake.svg";
 						definedAliases = [ "@nixpkgs" ];
 					};
+
+					"YouTube " = {
+						urls = [{
+							template = "https://www.youtube.com/results";
+							params = [{ name = "search_query"; value = "{searchTerms}"; }];
+						}];
+
+						icon = "https://www.youtube.com/favicon.ico";
+						definedAliases = [ "@youtube" ];
+					};
 				};
 			};	
 			search.force = true;
