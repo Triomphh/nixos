@@ -44,6 +44,16 @@
       ];
     };
 
+    # Laptop
+    nixosConfigurations."laptop" = inputs.nixpkgs.lib.nixosSystem {
+      system = "x86_64-linux";
+      specialArgs = { inherit inputs; };
+      modules = [
+        ./hosts/laptop/configuration.nix
+        inputs.home-manager.nixosModules.default
+      ];
+    };
+
     # Other configs
     # ...
 
