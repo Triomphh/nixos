@@ -5,7 +5,7 @@
     [
       ./hardware-configuration.nix
 
-      ../../modules/nixos/desktop/flatpak.nix
+      # ../../modules/nixos/desktop/flatpak.nix
       ../../modules/nixos/desktop/gnome.nix
       ../../modules/nixos/dev/docker.nix
       ../../modules/nixos/dev/direnv.nix
