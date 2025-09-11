@@ -59,6 +59,9 @@
 
 				# Disable Picture-in-Picture video controls
 				"media.videocontrols.picture-in-picture.video-toggle.enabled" = false;
+
+				# Disable middle mouse button paste
+				"middlemouse.paste" = false;
 			};
 
 
