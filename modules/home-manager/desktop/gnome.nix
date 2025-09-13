@@ -42,6 +42,11 @@
       blur = false; # Disable Panel blur to be handled by transparent-top-bar instead
     };
 
+    # Transparent Top Bar (adjustable) settings
+    "com/ftpix/transparentbar" = {
+      transparency = 0;
+    };
+
     # GNOME Shell keybindings
     "org/gnome/shell/keybindings" = {
       # Disable toggle-quick-settings shortcut
