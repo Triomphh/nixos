@@ -71,6 +71,7 @@
 				french-dictionary
 				return-youtube-dislikes
 				proton-pass
+				proton-vpn
 				ublock-origin
 				youtube-shorts-block
 			];
