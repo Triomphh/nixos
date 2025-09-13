@@ -15,6 +15,10 @@
     gnome-boxes
     gnomeExtensions.user-themes
     gnomeExtensions.tiling-shell
+    gnomeExtensions.appindicator
+    gnomeExtensions.dual-shock-4-battery-percentage
+    gnomeExtensions.transparent-top-bar-adjustable-transparency
+    gnomeExtensions.blur-my-shell
   ];
 
   # Note: dconf settings have been moved to Home Manager for better persistence
