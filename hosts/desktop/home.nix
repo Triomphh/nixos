@@ -45,6 +45,7 @@
     ../../modules/home-manager/terminals/kitty.nix
     ../../modules/home-manager/tools/git.nix
     ../../modules/home-manager/tools/pandoc.nix
+    ../../modules/home-manager/tools/zathura.nix
   ];
 
   # Git
