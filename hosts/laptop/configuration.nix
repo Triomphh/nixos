@@ -13,6 +13,7 @@
       ../../modules/nixos/dev/rust.nix
       ../../modules/nixos/media/vlc.nix
       ../../modules/nixos/theming/stylix.nix
+      ../../modules/nixos/virt/virt-manager.nix
     ];
 
     
