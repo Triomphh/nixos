@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, lib, ... }:
 
 {
   # Home Manager needs a bit of information about you and the paths it should
@@ -65,6 +65,17 @@
     };
   };
 
+  # Power management settings - disable sleep and power save features
+  "org/gnome/settings-daemon/plugins/power" = {
+    # Set power button to power off
+    power-button-action = "interactive";
+    # Disable automatic suspend
+    sleep-inactive-ac-type = "nothing";
+    sleep-inactive-battery-type = "nothing";
+    # Disable automatic suspend timeouts
+    sleep-inactive-ac-timeout = lib.gvariant.mkUint32 0;
+    sleep-inactive-battery-timeout = lib.gvariant.mkUint32 0;
+  };
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
