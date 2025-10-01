@@ -25,12 +25,10 @@
     ../../modules/home-manager/browsers/zen-browser.nix
     ../../modules/home-manager/browsers/firefox.nix
     ../../modules/home-manager/desktop/gnome.nix
-    ../../modules/home-manager/editors/cursor.nix
     ../../modules/home-manager/editors/emacs.nix
     ../../modules/home-manager/editors/neovim.nix
     ../../modules/home-manager/editors/rust-rover.nix
     ../../modules/home-manager/editors/vscode.nix
-    ../../modules/home-manager/editors/windsurf.nix
     ../../modules/home-manager/gaming/dolphin-emu.nix
     ../../modules/home-manager/gaming/proton.nix
     ../../modules/home-manager/shells/fish.nix
