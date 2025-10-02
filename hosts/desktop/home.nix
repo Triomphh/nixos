@@ -22,6 +22,7 @@
 
 
   imports = [
+    ../../modules/home-manager/browsers/brave.nix
     ../../modules/home-manager/browsers/zen-browser.nix
     ../../modules/home-manager/browsers/firefox.nix
     ../../modules/home-manager/desktop/gnome.nix
