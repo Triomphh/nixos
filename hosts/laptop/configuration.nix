@@ -140,6 +140,18 @@
     # shell = pkgs.fish
   };
 
+  # Define a user account. Don't forget to set a password with 'passwd'.
+  users.users.user = {
+    isNormalUser = true;
+    description = "user";
+    extraGroups = [ "networkmanager" "wheel" "libvirtd" "docker" ];
+    packages = with pkgs; [
+      yt-dlp
+      spotify
+    ];
+    # shell = pkgs.fish
+  };
+
   home-manager = {
     extraSpecialArgs = { inherit inputs; };
     users = {
