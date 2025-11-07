@@ -8,6 +8,7 @@
       ../../modules/nixos/desktop/gnome.nix
       ../../modules/nixos/dev/docker.nix
       ../../modules/nixos/dev/direnv.nix
+      ../../modules/nixos/dev/kubernetes.nix
       ../../modules/nixos/dev/minikube.nix
       ../../modules/nixos/dev/guile.nix
       ../../modules/nixos/dev/nixd.nix
