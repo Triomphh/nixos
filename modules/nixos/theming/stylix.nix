@@ -11,6 +11,9 @@
 
     base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-macchiato.yaml";
 
+    # Disable Qt styling to avoid broken qgnomeplatform
+    targets.qt.enable = false;
+
     fonts = {
       monospace = {
         package = pkgs.nerd-fonts.fira-code;

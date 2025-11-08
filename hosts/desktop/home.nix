@@ -55,6 +55,13 @@
     extraConfig.core.editor = "nvim";
   };
 
+  # Qt configuration - use adwaita-qt instead of gnome platform theme
+  # This avoids the broken qgnomeplatform package
+  qt = {
+    enable = true;
+    platformTheme.name = lib.mkForce "adwaita";
+    style.name = lib.mkForce "adwaita-dark";
+  };
 
   # XDG user directories
   xdg.userDirs = {
