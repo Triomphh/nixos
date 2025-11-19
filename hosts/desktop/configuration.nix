@@ -11,6 +11,8 @@
       ../../modules/nixos/dev/direnv.nix
       ../../modules/nixos/dev/guile.nix
       ../../modules/nixos/dev/java.nix
+      ../../modules/nixos/dev/kubernetes.nix
+      ../../modules/nixos/dev/minikube.nix
       ../../modules/nixos/dev/nixd.nix
       ../../modules/nixos/dev/rust.nix
       ../../modules/nixos/dev/typst.nix
