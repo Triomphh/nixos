@@ -16,6 +16,7 @@
       ../../modules/nixos/dev/nixd.nix
       ../../modules/nixos/dev/rust.nix
       ../../modules/nixos/dev/typst.nix
+      ../../modules/nixos/documents/libreoffice.nix
       ../../modules/nixos/gaming/steam.nix
       ../../modules/nixos/gaming/wine.nix
       ../../modules/nixos/media/vlc.nix
