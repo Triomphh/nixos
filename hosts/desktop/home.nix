@@ -32,6 +32,7 @@
     ../../modules/home-manager/editors/neovim.nix
     ../../modules/home-manager/editors/rust-rover.nix
     ../../modules/home-manager/editors/vscode.nix
+    ../../modules/home-manager/editors/zed-editor.nix
     ../../modules/home-manager/gaming/dolphin-emu.nix
     ../../modules/home-manager/gaming/heroic.nix
     ../../modules/home-manager/gaming/hydralauncher.nix
