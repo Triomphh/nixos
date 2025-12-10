@@ -29,6 +29,7 @@
     ../../modules/home-manager/editors/claude-code.nix
     ../../modules/home-manager/editors/eclipse.nix
     ../../modules/home-manager/editors/emacs.nix
+    ../../modules/home-manager/editors/idea-ultimate.nix
     ../../modules/home-manager/editors/neovim.nix
     ../../modules/home-manager/editors/rust-rover.nix
     ../../modules/home-manager/editors/vscode.nix

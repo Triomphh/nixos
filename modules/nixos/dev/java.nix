@@ -8,7 +8,5 @@
     nodejs
     nodePackages.npm
     nodePackages."@angular/cli"
-
-    jetbrains.idea-ultimate
   ];
 }
