@@ -27,6 +27,7 @@
     ../../modules/home-manager/browsers/firefox.nix
     ../../modules/home-manager/desktop/gnome.nix
     ../../modules/home-manager/editors/claude-code.nix
+    ../../modules/home-manager/editors/clion.nix
     ../../modules/home-manager/editors/eclipse.nix
     ../../modules/home-manager/editors/emacs.nix
     ../../modules/home-manager/editors/idea-ultimate.nix
