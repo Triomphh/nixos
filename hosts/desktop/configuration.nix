@@ -20,6 +20,7 @@
       ../../modules/nixos/gaming/steam.nix
       ../../modules/nixos/gaming/wine.nix
       ../../modules/nixos/media/vlc.nix
+      ../../modules/nixos/network/protonvpn.nix
       ../../modules/nixos/theming/stylix.nix
     ];
 
