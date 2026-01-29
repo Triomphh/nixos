@@ -23,7 +23,7 @@
       ../../modules/nixos/theming/stylix.nix
     ];
 
-    
+
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
 
@@ -103,7 +103,7 @@
   services.xserver.videoDrivers = ["nvidia"];
 
   hardware.nvidia = {
-    
+
     # Modesetting is required.
     modesetting.enable = true;
 
