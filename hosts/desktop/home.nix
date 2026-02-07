@@ -57,6 +57,7 @@
     userName  = "Triomph";
     userEmail = "worker13prime@gmail.com";
     extraConfig.core.editor = "nvim";
+    lfs.enable = true;
   };
 
   # Qt configuration - use adwaita-qt instead of gnome platform theme
