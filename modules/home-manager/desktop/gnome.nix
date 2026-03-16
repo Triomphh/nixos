@@ -72,7 +72,7 @@
     # Custom keyboard shortcuts
     "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0" = {
       name = "Open Browser";
-      command = "zen";
+      command = "zen-beta";
       binding = "<Super>f";
     };
     
