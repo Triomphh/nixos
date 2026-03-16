@@ -2,7 +2,7 @@
 
 {
   environment.systemPackages = with pkgs; [
-    wineWowPackages.stableFull
+    wineWow64Packages.stableFull
     winetricks
   ];
 }

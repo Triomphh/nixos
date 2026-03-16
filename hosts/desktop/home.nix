@@ -28,6 +28,7 @@
     ../../modules/home-manager/desktop/gnome.nix
     ../../modules/home-manager/editors/claude-code.nix
     ../../modules/home-manager/editors/clion.nix
+    ../../modules/home-manager/editors/cursor.nix
     ../../modules/home-manager/editors/eclipse.nix
     ../../modules/home-manager/editors/emacs.nix
     ../../modules/home-manager/editors/idea-ultimate.nix
@@ -36,7 +37,7 @@
     ../../modules/home-manager/editors/vscode.nix
     ../../modules/home-manager/editors/zed-editor.nix
     ../../modules/home-manager/gaming/dolphin-emu.nix
-    ../../modules/home-manager/gaming/heroic.nix
+    # ../../modules/home-manager/gaming/heroic.nix
     ../../modules/home-manager/gaming/hydralauncher.nix
     ../../modules/home-manager/gaming/lutris.nix
     ../../modules/home-manager/gaming/prismlauncher.nix
@@ -54,9 +55,11 @@
 
   # Git
   programs.git = {
-    userName  = "Triomph";
-    userEmail = "worker13prime@gmail.com";
-    extraConfig.core.editor = "nvim";
+    settings = {
+      user.name  = "Triomph";
+      user.email = "worker13prime@gmail.com";
+      core.editor = "nvim";
+    };
     lfs.enable = true;
   };
 
@@ -73,7 +76,7 @@
     enable = true;
     createDirectories = true;
     extraConfig = {
-      XDG_GAMES_DIR = "$HOME/Games";
+      GAMES = "$HOME/Games";
     };
   };
 

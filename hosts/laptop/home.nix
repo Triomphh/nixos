@@ -41,9 +41,12 @@
 
   # Git
   programs.git = {
-    userName  = "Triomph";
-    userEmail = "worker13prime@gmail.com";
-    extraConfig.core.editor = "nvim";
+    settings = {
+      user.name  = "Triomph";
+      user.email = "worker13prime@gmail.com";
+      core.editor = "nvim";
+    };
+    lfs.enable = true;
   };
 
 
@@ -52,7 +55,7 @@
     enable = true;
     createDirectories = true;
     extraConfig = {
-      XDG_GAMES_DIR = "$HOME/Games";
+      GAMES = "$HOME/Games";
     };
   };
 
