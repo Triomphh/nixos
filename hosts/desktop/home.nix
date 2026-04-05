@@ -22,6 +22,7 @@
 
 
   imports = [
+    ../../modules/home-manager/ai/lmstudio.nix
     ../../modules/home-manager/browsers/brave.nix
     ../../modules/home-manager/browsers/zen-browser.nix
     ../../modules/home-manager/browsers/firefox.nix
