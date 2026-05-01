@@ -7,6 +7,7 @@
 
       ../../modules/nixos/desktop/flatpak.nix
       ../../modules/nixos/desktop/gnome.nix
+      ../../modules/nixos/desktop/resources.nix
       ../../modules/nixos/dev/docker.nix
       ../../modules/nixos/dev/direnv.nix
       ../../modules/nixos/dev/guile.nix

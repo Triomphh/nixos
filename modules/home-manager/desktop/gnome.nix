@@ -66,6 +66,7 @@
         "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/"
         "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/"
         "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/"
+        "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/"
       ];
     };
     
@@ -92,6 +93,12 @@
       name = "Open Terminal";
       command = "ghostty";
       binding = "<Super>t";
+    };
+
+    "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4" = {
+      name = "Open Task Manager";
+      command = "resources";
+      binding = "<Control><Shift>Escape";
     };
 
     # Window manager keybindings
