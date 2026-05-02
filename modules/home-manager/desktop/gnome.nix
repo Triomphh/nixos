@@ -85,7 +85,7 @@
     
     "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2" = {
       name = "Open Editor";
-      command = "emacsclient -c";
+      command = "zeditor";
       binding = "<Super>c";
     };
     
