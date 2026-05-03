@@ -1,4 +1,4 @@
-{ pkgs, lib, ... }:
+{ lib, ... }:
 
 {
   programs.zed-editor = {
@@ -19,7 +19,7 @@
       theme = lib.mkForce {
         mode = "system";
         light = "Catppuccin Latte (Blur) [Light]";
-        dark = "Catppuccin Frappé (Blur) [Light]";
+        dark = "Catppuccin Macchiato (Blur) [Light]";
       };
 
       centered_layout = {
@@ -55,6 +55,26 @@
           };
         };
       };
+
+      autosave = {
+        after_delay = {
+          milliseconds = 300;
+        };
+      };
+
+      diff_view_style = "unified";
+
+      language_models = {
+        lmstudio = {
+          api_url = "http://localhost:1234/api/v0";
+        };
+      };
+
+      icon_theme = {
+        mode = "dark";
+        light = "Colored Zed Icons Theme Dark";
+        dark = "Colored Zed Icons Theme Dark";
+      };
     };
 
     userKeymaps = [
@@ -62,6 +82,7 @@
         bindings = {
           "ctrl-alt-super-c" = "workspace::ToggleCenteredLayout";
           "ctrl-shift-e" = "project_panel::Toggle";
+          "ctrl-shift-g" = "git_panel::Toggle";
           "ctrl-?" = "agent::Toggle";
         };
       }
