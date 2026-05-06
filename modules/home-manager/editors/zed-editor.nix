@@ -87,7 +87,7 @@
         };
       }
       {
-        context = "(VimControl && !menu) || (!Editor && !Terminal)";
+        context = "(VimControl && !menu) || !Editor";
         bindings = {
           "shift-left" = "workspace::ActivatePaneLeft";
           "shift-right" = "workspace::ActivatePaneRight";
@@ -132,6 +132,17 @@
               ["workspace::SendKeystrokes" "D i s a b l e d enter"]
             ]
           ];
+        };
+      }
+      {
+        context = "Editor && edit_prediction";
+        unbind = {
+          "alt-k" = "editor::AcceptNextWordEditPrediction";
+          "alt-j" = "editor::AcceptNextLineEditPrediction";
+        };
+        bindings = {
+          "ctrl-right" = "editor::AcceptNextWordEditPrediction";
+          "ctrl-down" = "editor::AcceptNextLineEditPrediction";
         };
       }
     ];
