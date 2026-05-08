@@ -40,7 +40,7 @@
     ../../modules/home-manager/gaming/dolphin-emu.nix
     # ../../modules/home-manager/gaming/heroic.nix
     ../../modules/home-manager/gaming/hydralauncher.nix
-    ../../modules/home-manager/gaming/lutris.nix
+    # ../../modules/home-manager/gaming/lutris.nix
     ../../modules/home-manager/gaming/prismlauncher.nix
     ../../modules/home-manager/gaming/proton.nix
     ../../modules/home-manager/gaming/vintagestory.nix
