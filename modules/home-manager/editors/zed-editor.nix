@@ -160,7 +160,7 @@
     {
       "main": {
         "prefix": "main",
-        "body": ["fn main() {", "$0", "}"],
+        "body": ["fn main() {", "\t$0", "}"],
         "description": "Creates a main function"
       }
     }
