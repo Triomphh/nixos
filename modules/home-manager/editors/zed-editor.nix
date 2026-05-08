@@ -29,29 +29,31 @@
 
       profiles = {
         Zen = {
-          tab_bar = {
-            show = false;
-            show_nav_history_buttons = false;
-          };
-          toolbar = {
-            breadcrumbs = false;
-            quick_actions = false;
-          };
-          gutter = {
-            # folds = false;
-          };
-          indent_guides = {
-            enabled = false;
-          };
-          scrollbar = {
-            show = "never";
-            cursors = false;
-            git_diff = false;
-            search_results = false;
-            selected_symbol = false;
-          };
-          status_bar = {
-            "experimental.show" = false;
+          settings = {
+            tab_bar = {
+              show = false;
+              show_nav_history_buttons = false;
+            };
+            toolbar = {
+              breadcrumbs = false;
+              quick_actions = false;
+            };
+            gutter = {
+              # folds = false;
+            };
+            indent_guides = {
+              enabled = false;
+            };
+            scrollbar = {
+              show = "never";
+              cursors = false;
+              git_diff = false;
+              search_results = false;
+              selected_symbol = false;
+            };
+            status_bar = {
+              "experimental.show" = false;
+            };
           };
         };
       };
