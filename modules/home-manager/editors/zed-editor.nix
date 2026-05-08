@@ -155,4 +155,14 @@
       }
     ];
   };
+
+  xdg.configFile."zed/snippets/rust.json".text = ''
+    {
+      "main": {
+        "prefix": "main",
+        "body": ["fn main() {", "$0", "}"],
+        "description": "Creates a main function"
+      }
+    }
+  '';
 }
