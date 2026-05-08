@@ -77,6 +77,12 @@
         light = "Colored Zed Icons Theme Dark";
         dark = "Colored Zed Icons Theme Dark";
       };
+
+      languages = {
+        Rust = {
+          show_edit_predictions = false;
+        };
+      };
     };
 
     userKeymaps = [
