@@ -65,7 +65,7 @@
 			};
 
 
-			extensions.packages = with inputs.firefox-addons.packages.${pkgs.system}; [
+			extensions.packages = with inputs.firefox-addons.packages.${pkgs.stdenv.hostPlatform.system}; [
 				#betterttv # unfree
 				darkreader
 				french-dictionary

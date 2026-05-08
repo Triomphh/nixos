@@ -22,13 +22,13 @@
       serif = {
         package = pkgs.source-serif;
         name = "Source Serif Pro";
-        # package = inputs.apple-fonts.packages.${pkgs.system}.ny-nerd;
+        # package = inputs.apple-fonts.packages.${pkgs.stdenv.hostPlatform.system}.ny-nerd;
         # name = "New York Nerd Font";
       };
       sansSerif = {
         package = pkgs.inter;
         name = "Inter";
-        # package = inputs.apple-fonts.packages.${pkgs.system}.sf-pro-nerd;
+        # package = inputs.apple-fonts.packages.${pkgs.stdenv.hostPlatform.system}.sf-pro-nerd;
         # name = "SFProDisplay Nerd Font";
       };
     };
