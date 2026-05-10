@@ -92,6 +92,8 @@
           "ctrl-shift-e" = "project_panel::Toggle";
           "ctrl-shift-g" = "git_panel::Toggle";
           "ctrl-?" = "agent::Toggle";
+          "ctrl-down" = "editor::MoveToEndOfParagraph";
+          "ctrl-up" = "editor::MoveToStartOfParagraph";
         };
       }
       {
