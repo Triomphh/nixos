@@ -22,6 +22,7 @@
       ../../modules/nixos/gaming/wine.nix
       ../../modules/nixos/media/vlc.nix
       ../../modules/nixos/network/protonvpn.nix
+      ../../modules/nixos/recording/obs-studio.nix
       ../../modules/nixos/system/nix-ld.nix
       ../../modules/nixos/theming/stylix.nix
     ];
