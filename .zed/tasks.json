@@ -1,0 +1,6 @@
+[
+  {
+    "label": "nixos-rebuild (desktop)",
+    "command": "sudo nixos-rebuild switch --flake .#desktop",
+  },
+]
